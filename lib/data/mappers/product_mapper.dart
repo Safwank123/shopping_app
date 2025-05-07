@@ -4,7 +4,7 @@ import '../../domain/entities/variant_entity.dart';
 import '../models/product_model.dart';
 
 class ProductMapper {
-  static ProductEntity modelToEntity(ProductModel model) {
+  static ProductEntity modelToEntity(ProductModel model, {required List<ReviewEntity> reviews, required List<VariantEntity> variants}) {
     return ProductEntity(
       id: model.id,
       title: model.title,
